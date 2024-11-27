@@ -1,0 +1,6 @@
+{
+  "token": "SLACK_TOKWN",
+  "channels": [
+    {"id": "CHANNEL_ID", "name": "CHANNEL_NAME"}
+  ]
+}

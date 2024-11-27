@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  app:
+    build: ./
+    user: root
+    volumes:
+      - ./:/app
+      - ./jupyter_lab_config:/root/.jupyter/lab/user-settings
+    ports:
+      - "8888:8888"
+    command: jupyter lab --ip=0.0.0.0 --allow-root --NotebookApp.token='' --port=8888
